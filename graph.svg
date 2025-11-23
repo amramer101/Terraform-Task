@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1394pt" height="337pt" viewBox="0.00 0.00 1394.00 337.48">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 333.4827)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-333.4827 1389.9986,-333.4827 1389.9986,4 -4,4"/>
+<!-- aws_cloudwatch_metric_alarm.Backend_cpu_alarm -->
+<g id="node1" class="node">
+<title>aws_cloudwatch_metric_alarm.Backend_cpu_alarm</title>
+<polygon fill="none" stroke="#000000" points="1386.247,-221 1076.2542,-221 1076.2542,-185 1386.247,-185 1386.247,-221"/>
+<text text-anchor="middle" x="1231.2506" y="-198.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_cloudwatch_metric_alarm.Backend_cpu_alarm</text>
+</g>
+<!-- aws_instance.EC2&#45;Backend -->
+<g id="node5" class="node">
+<title>aws_instance.EC2-Backend</title>
+<polygon fill="none" stroke="#000000" points="964.9093,-248 792.5775,-248 792.5775,-212 964.9093,-212 964.9093,-248"/>
+<text text-anchor="middle" x="878.7434" y="-225.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_instance.EC2-Backend</text>
+</g>
+<!-- aws_cloudwatch_metric_alarm.Backend_cpu_alarm&#45;&gt;aws_instance.EC2&#45;Backend -->
+<g id="edge1" class="edge">
+<title>aws_cloudwatch_metric_alarm.Backend_cpu_alarm-&gt;aws_instance.EC2-Backend</title>
+<path fill="none" stroke="#000000" d="M1076.3793,-214.8622C1042.0186,-217.4941 1006.5576,-220.2102 975.3241,-222.6025"/>
+<polygon fill="#000000" stroke="#000000" points="975.0422,-219.1137 965.3387,-223.3673 975.5768,-226.0933 975.0422,-219.1137"/>
+</g>
+<!-- aws_sns_topic.cpu_alert_topic -->
+<g id="node14" class="node">
+<title>aws_sns_topic.cpu_alert_topic</title>
+<polygon fill="none" stroke="#000000" points="972.9757,-140 784.5111,-140 784.5111,-104 972.9757,-104 972.9757,-140"/>
+<text text-anchor="middle" x="878.7434" y="-117.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_sns_topic.cpu_alert_topic</text>
+</g>
+<!-- aws_cloudwatch_metric_alarm.Backend_cpu_alarm&#45;&gt;aws_sns_topic.cpu_alert_topic -->
+<g id="edge2" class="edge">
+<title>aws_cloudwatch_metric_alarm.Backend_cpu_alarm-&gt;aws_sns_topic.cpu_alert_topic</title>
+<path fill="none" stroke="#000000" d="M1173.6589,-184.9009C1136.0313,-173.5222 1085.6719,-159.1308 1040.5026,-149 1022.0496,-144.8613 1002.2826,-141.0526 983.1258,-137.6813"/>
+<polygon fill="#000000" stroke="#000000" points="983.6243,-134.2156 973.1739,-135.9587 982.4304,-141.113 983.6243,-134.2156"/>
+</g>
+<!-- aws_cloudwatch_metric_alarm.frontend_cpu_alarm -->
+<g id="node2" class="node">
+<title>aws_cloudwatch_metric_alarm.frontend_cpu_alarm</title>
+<polygon fill="none" stroke="#000000" points="1385.1926,-288 1077.3086,-288 1077.3086,-252 1385.1926,-252 1385.1926,-288"/>
+<text text-anchor="middle" x="1231.2506" y="-265.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_cloudwatch_metric_alarm.frontend_cpu_alarm</text>
+</g>
+<!-- aws_instance.EC2&#45;Frontend -->
+<g id="node6" class="node">
+<title>aws_instance.EC2-Frontend</title>
+<polygon fill="none" stroke="#000000" points="965.9772,-302 791.5096,-302 791.5096,-266 965.9772,-266 965.9772,-302"/>
+<text text-anchor="middle" x="878.7434" y="-279.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_instance.EC2-Frontend</text>
+</g>
+<!-- aws_cloudwatch_metric_alarm.frontend_cpu_alarm&#45;&gt;aws_instance.EC2&#45;Frontend -->
+<g id="edge3" class="edge">
+<title>aws_cloudwatch_metric_alarm.frontend_cpu_alarm-&gt;aws_instance.EC2-Frontend</title>
+<path fill="none" stroke="#000000" d="M1077.1486,-276.1202C1042.8787,-277.4813 1007.4736,-278.8874 976.2269,-280.1284"/>
+<polygon fill="#000000" stroke="#000000" points="976.0879,-276.6311 966.2347,-280.5252 976.3657,-283.6255 976.0879,-276.6311"/>
+</g>
+<!-- aws_cloudwatch_metric_alarm.frontend_cpu_alarm&#45;&gt;aws_sns_topic.cpu_alert_topic -->
+<g id="edge4" class="edge">
+<title>aws_cloudwatch_metric_alarm.frontend_cpu_alarm-&gt;aws_sns_topic.cpu_alert_topic</title>
+<path fill="none" stroke="#000000" d="M1113.6466,-251.8872C1100.1872,-246.3755 1087.4073,-239.2365 1076.5026,-230 1046.4415,-204.5377 1071.6493,-173.1223 1040.5026,-149 1024.0596,-136.2653 1003.8301,-128.5998 983.3137,-124.1473"/>
+<polygon fill="#000000" stroke="#000000" points="983.7149,-120.6605 973.2343,-122.2115 982.3946,-127.5349 983.7149,-120.6605"/>
+</g>
+<!-- aws_db_instance.rds -->
+<g id="node3" class="node">
+<title>aws_db_instance.rds</title>
+<polygon fill="none" stroke="#000000" points="1297.4914,-63 1165.0098,-63 1165.0098,-27 1297.4914,-27 1297.4914,-63"/>
+<text text-anchor="middle" x="1231.2506" y="-40.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_db_instance.rds</text>
+</g>
+<!-- aws_db_subnet_group.rds_subnet_group -->
+<g id="node4" class="node">
+<title>aws_db_subnet_group.rds_subnet_group</title>
+<polygon fill="none" stroke="#000000" points="680.8802,-40 435.2964,-40 435.2964,-4 680.8802,-4 680.8802,-40"/>
+<text text-anchor="middle" x="558.0883" y="-17.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_db_subnet_group.rds_subnet_group</text>
+</g>
+<!-- aws_db_instance.rds&#45;&gt;aws_db_subnet_group.rds_subnet_group -->
+<g id="edge5" class="edge">
+<title>aws_db_instance.rds-&gt;aws_db_subnet_group.rds_subnet_group</title>
+<path fill="none" stroke="#000000" d="M1164.8629,-42.7317C1055.1342,-38.9826 833.8937,-31.4235 691.0479,-26.5428"/>
+<polygon fill="#000000" stroke="#000000" points="691.0148,-23.0398 680.9011,-26.1962 690.7757,-30.0357 691.0148,-23.0398"/>
+</g>
+<!-- aws_security_group.Database&#45;SG -->
+<g id="node12" class="node">
+<title>aws_security_group.Database-SG</title>
+<polygon fill="none" stroke="#000000" points="981.8354,-86 775.6514,-86 775.6514,-50 981.8354,-50 981.8354,-86"/>
+<text text-anchor="middle" x="878.7434" y="-63.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_security_group.Database-SG</text>
+</g>
+<!-- aws_db_instance.rds&#45;&gt;aws_security_group.Database&#45;SG -->
+<g id="edge6" class="edge">
+<title>aws_db_instance.rds-&gt;aws_security_group.Database-SG</title>
+<path fill="none" stroke="#000000" d="M1164.9467,-49.3261C1116.3118,-52.4994 1049.0804,-56.886 991.9998,-60.6104"/>
+<polygon fill="#000000" stroke="#000000" points="991.5851,-57.1299 981.8342,-61.2736 992.0409,-64.115 991.5851,-57.1299"/>
+</g>
+<!-- aws_subnet.project&#45;subnet&#45;private1 -->
+<g id="node16" class="node">
+<title>aws_subnet.project-subnet-private1</title>
+<polygon fill="none" stroke="#000000" points="391.6385,-36 175.7805,-36 175.7805,0 391.6385,0 391.6385,-36"/>
+<text text-anchor="middle" x="283.7095" y="-13.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_subnet.project-subnet-private1</text>
+</g>
+<!-- aws_db_subnet_group.rds_subnet_group&#45;&gt;aws_subnet.project&#45;subnet&#45;private1 -->
+<g id="edge7" class="edge">
+<title>aws_db_subnet_group.rds_subnet_group-&gt;aws_subnet.project-subnet-private1</title>
+<path fill="none" stroke="#000000" d="M434.9443,-20.2048C423.9278,-20.0442 412.7893,-19.8818 401.8169,-19.7218"/>
+<polygon fill="#000000" stroke="#000000" points="401.8451,-16.222 391.7951,-19.5757 401.743,-23.2212 401.8451,-16.222"/>
+</g>
+<!-- aws_subnet.project&#45;subnet&#45;private2 -->
+<g id="node17" class="node">
+<title>aws_subnet.project-subnet-private2</title>
+<polygon fill="none" stroke="#000000" points="391.6385,-90 175.7805,-90 175.7805,-54 391.6385,-54 391.6385,-90"/>
+<text text-anchor="middle" x="283.7095" y="-67.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_subnet.project-subnet-private2</text>
+</g>
+<!-- aws_db_subnet_group.rds_subnet_group&#45;&gt;aws_subnet.project&#45;subnet&#45;private2 -->
+<g id="edge8" class="edge">
+<title>aws_db_subnet_group.rds_subnet_group-&gt;aws_subnet.project-subnet-private2</title>
+<path fill="none" stroke="#000000" d="M459.0313,-40.0511C437.4668,-43.9808 414.5368,-48.1594 392.6143,-52.1543"/>
+<polygon fill="#000000" stroke="#000000" points="391.8316,-48.7392 382.6211,-53.9753 393.0866,-55.6258 391.8316,-48.7392"/>
+</g>
+<!-- aws_key_pair.dev&#45;key -->
+<g id="node8" class="node">
+<title>aws_key_pair.dev-key</title>
+<polygon fill="none" stroke="#000000" points="629.4247,-302 486.7519,-302 486.7519,-266 629.4247,-266 629.4247,-302"/>
+<text text-anchor="middle" x="558.0883" y="-279.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_key_pair.dev-key</text>
+</g>
+<!-- aws_instance.EC2&#45;Backend&#45;&gt;aws_key_pair.dev&#45;key -->
+<g id="edge9" class="edge">
+<title>aws_instance.EC2-Backend-&gt;aws_key_pair.dev-key</title>
+<path fill="none" stroke="#000000" d="M792.2682,-244.386C767.9168,-248.4501 741.4106,-252.8861 716.9842,-257 691.7625,-261.2478 664.2945,-265.9044 639.3998,-270.1363"/>
+<polygon fill="#000000" stroke="#000000" points="638.5407,-266.732 629.2691,-271.8591 639.7144,-273.633 638.5407,-266.732"/>
+</g>
+<!-- aws_security_group.Backend&#45;SG -->
+<g id="node11" class="node">
+<title>aws_security_group.Backend-SG</title>
+<polygon fill="none" stroke="#000000" points="659.8606,-194 456.316,-194 456.316,-158 659.8606,-158 659.8606,-194"/>
+<text text-anchor="middle" x="558.0883" y="-171.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_security_group.Backend-SG</text>
+</g>
+<!-- aws_instance.EC2&#45;Backend&#45;&gt;aws_security_group.Backend&#45;SG -->
+<g id="edge10" class="edge">
+<title>aws_instance.EC2-Backend-&gt;aws_security_group.Backend-SG</title>
+<path fill="none" stroke="#000000" d="M792.2682,-215.614C767.9168,-211.5499 741.4106,-207.1139 716.9842,-203 701.932,-200.4649 686.0798,-197.7843 670.452,-195.1352"/>
+<polygon fill="#000000" stroke="#000000" points="670.6698,-191.6222 660.2253,-193.4008 669.4992,-198.5237 670.6698,-191.6222"/>
+</g>
+<!-- aws_subnet.project&#45;subnet&#45;public -->
+<g id="node18" class="node">
+<title>aws_subnet.project-subnet-public</title>
+<polygon fill="none" stroke="#000000" points="660.1422,-248 456.0344,-248 456.0344,-212 660.1422,-212 660.1422,-248"/>
+<text text-anchor="middle" x="558.0883" y="-225.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_subnet.project-subnet-public</text>
+</g>
+<!-- aws_instance.EC2&#45;Backend&#45;&gt;aws_subnet.project&#45;subnet&#45;public -->
+<g id="edge11" class="edge">
+<title>aws_instance.EC2-Backend-&gt;aws_subnet.project-subnet-public</title>
+<path fill="none" stroke="#000000" d="M792.3919,-230C754.8568,-230 710.3932,-230 670.3405,-230"/>
+<polygon fill="#000000" stroke="#000000" points="670.2596,-226.5001 660.2596,-230 670.2596,-233.5001 670.2596,-226.5001"/>
+</g>
+<!-- aws_instance.EC2&#45;Frontend&#45;&gt;aws_key_pair.dev&#45;key -->
+<g id="edge12" class="edge">
+<title>aws_instance.EC2-Frontend-&gt;aws_key_pair.dev-key</title>
+<path fill="none" stroke="#000000" d="M791.5465,-284C744.1195,-284 685.8265,-284 639.3545,-284"/>
+<polygon fill="#000000" stroke="#000000" points="639.3248,-280.5001 629.3248,-284 639.3247,-287.5001 639.3248,-280.5001"/>
+</g>
+<!-- aws_security_group.Frontend&#45;SG -->
+<g id="node13" class="node">
+<title>aws_security_group.Frontend-SG</title>
+<polygon fill="none" stroke="#000000" points="386.55,-236 180.869,-236 180.869,-200 386.55,-200 386.55,-236"/>
+<text text-anchor="middle" x="283.7095" y="-213.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_security_group.Frontend-SG</text>
+</g>
+<!-- aws_instance.EC2&#45;Frontend&#45;&gt;aws_security_group.Frontend&#45;SG -->
+<g id="edge13" class="edge">
+<title>aws_instance.EC2-Frontend-&gt;aws_security_group.Frontend-SG</title>
+<path fill="none" stroke="#000000" d="M809.9891,-302.0284C721.4938,-322.1228 563.8181,-347.3332 435.1924,-311 388.1608,-297.7149 341.3473,-265.2762 312.4807,-242.4658"/>
+<polygon fill="#000000" stroke="#000000" points="314.4583,-239.5645 304.474,-236.0199 310.0686,-245.0172 314.4583,-239.5645"/>
+</g>
+<!-- aws_instance.EC2&#45;Frontend&#45;&gt;aws_subnet.project&#45;subnet&#45;public -->
+<g id="edge14" class="edge">
+<title>aws_instance.EC2-Frontend-&gt;aws_subnet.project-subnet-public</title>
+<path fill="none" stroke="#000000" d="M791.4277,-269.4737C767.3078,-265.448 741.1298,-261.0666 716.9842,-257 701.932,-254.4649 686.0798,-251.7843 670.452,-249.1352"/>
+<polygon fill="#000000" stroke="#000000" points="670.6698,-245.6222 660.2253,-247.4008 669.4992,-252.5237 670.6698,-245.6222"/>
+</g>
+<!-- aws_internet_gateway.public&#45;gateway -->
+<g id="node7" class="node">
+<title>aws_internet_gateway.public-gateway</title>
+<polygon fill="none" stroke="#000000" points="399.1753,-144 168.2437,-144 168.2437,-108 399.1753,-108 399.1753,-144"/>
+<text text-anchor="middle" x="283.7095" y="-121.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_internet_gateway.public-gateway</text>
+</g>
+<!-- aws_vpc.project&#45;vpc -->
+<g id="node19" class="node">
+<title>aws_vpc.project-vpc</title>
+<polygon fill="none" stroke="#000000" points="132.3401,-144 -.1135,-144 -.1135,-108 132.3401,-108 132.3401,-144"/>
+<text text-anchor="middle" x="66.1133" y="-121.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_vpc.project-vpc</text>
+</g>
+<!-- aws_internet_gateway.public&#45;gateway&#45;&gt;aws_vpc.project&#45;vpc -->
+<g id="edge15" class="edge">
+<title>aws_internet_gateway.public-gateway-&gt;aws_vpc.project-vpc</title>
+<path fill="none" stroke="#000000" d="M168.2215,-126C159.4713,-126 150.779,-126 142.3722,-126"/>
+<polygon fill="#000000" stroke="#000000" points="142.2746,-122.5001 132.2746,-126 142.2746,-129.5001 142.2746,-122.5001"/>
+</g>
+<!-- aws_route_table.public&#45;route&#45;table -->
+<g id="node9" class="node">
+<title>aws_route_table.public-route-table</title>
+<polygon fill="none" stroke="#000000" points="663.624,-140 452.5526,-140 452.5526,-104 663.624,-104 663.624,-140"/>
+<text text-anchor="middle" x="558.0883" y="-117.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_route_table.public-route-table</text>
+</g>
+<!-- aws_route_table.public&#45;route&#45;table&#45;&gt;aws_internet_gateway.public&#45;gateway -->
+<g id="edge16" class="edge">
+<title>aws_route_table.public-route-table-&gt;aws_internet_gateway.public-gateway</title>
+<path fill="none" stroke="#000000" d="M452.3988,-123.5408C438.4287,-123.7444 423.9979,-123.9548 409.7294,-124.1628"/>
+<polygon fill="#000000" stroke="#000000" points="409.3252,-120.6683 399.3773,-124.3138 409.4273,-127.6675 409.3252,-120.6683"/>
+</g>
+<!-- aws_route_table_association.public&#45;subnet&#45;association -->
+<g id="node10" class="node">
+<title>aws_route_table_association.public-subnet-association</title>
+<polygon fill="none" stroke="#000000" points="1040.2622,-194 717.2246,-194 717.2246,-158 1040.2622,-158 1040.2622,-194"/>
+<text text-anchor="middle" x="878.7434" y="-171.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_route_table_association.public-subnet-association</text>
+</g>
+<!-- aws_route_table_association.public&#45;subnet&#45;association&#45;&gt;aws_route_table.public&#45;route&#45;table -->
+<g id="edge17" class="edge">
+<title>aws_route_table_association.public-subnet-association-&gt;aws_route_table.public-route-table</title>
+<path fill="none" stroke="#000000" d="M770.4071,-157.962C752.5574,-154.9771 734.2511,-151.9081 716.9842,-149 702.9722,-146.6401 688.2668,-144.1541 673.6946,-141.6847"/>
+<polygon fill="#000000" stroke="#000000" points="674.0819,-138.2005 663.6375,-139.9797 672.9117,-145.1021 674.0819,-138.2005"/>
+</g>
+<!-- aws_route_table_association.public&#45;subnet&#45;association&#45;&gt;aws_subnet.project&#45;subnet&#45;public -->
+<g id="edge18" class="edge">
+<title>aws_route_table_association.public-subnet-association-&gt;aws_subnet.project-subnet-public</title>
+<path fill="none" stroke="#000000" d="M770.4071,-194.038C752.5574,-197.0229 734.2511,-200.0919 716.9842,-203 701.932,-205.5351 686.0798,-208.2157 670.452,-210.8648"/>
+<polygon fill="#000000" stroke="#000000" points="669.4992,-207.4763 660.2253,-212.5992 670.6698,-214.3778 669.4992,-207.4763"/>
+</g>
+<!-- aws_security_group.Backend&#45;SG&#45;&gt;aws_security_group.Frontend&#45;SG -->
+<g id="edge19" class="edge">
+<title>aws_security_group.Backend-SG-&gt;aws_security_group.Frontend-SG</title>
+<path fill="none" stroke="#000000" d="M456.3097,-191.5796C436.8699,-194.5553 416.4119,-197.6868 396.6475,-200.7122"/>
+<polygon fill="#000000" stroke="#000000" points="396.0528,-197.2624 386.6976,-202.2353 397.1121,-204.1818 396.0528,-197.2624"/>
+</g>
+<!-- aws_security_group.Database&#45;SG&#45;&gt;aws_security_group.Backend&#45;SG -->
+<g id="edge20" class="edge">
+<title>aws_security_group.Database-SG-&gt;aws_security_group.Backend-SG</title>
+<path fill="none" stroke="#000000" d="M775.6971,-72.362C755.0889,-76.6671 734.4365,-83.7126 716.9842,-95 692.764,-110.6646 704.7982,-132.7245 680.9842,-149 677.2306,-151.5654 673.2751,-153.8921 669.1752,-156.0019"/>
+<polygon fill="#000000" stroke="#000000" points="667.5765,-152.8855 659.9917,-160.283 670.5341,-159.23 667.5765,-152.8855"/>
+</g>
+<!-- aws_security_group.Frontend&#45;SG&#45;&gt;aws_vpc.project&#45;vpc -->
+<g id="edge21" class="edge">
+<title>aws_security_group.Frontend-SG-&gt;aws_vpc.project-vpc</title>
+<path fill="none" stroke="#000000" d="M207.5744,-199.9517C194.2514,-195.9354 180.678,-191.2758 168.2266,-186 144.7488,-176.0523 120.0558,-161.6631 100.834,-149.4696"/>
+<polygon fill="#000000" stroke="#000000" points="102.7138,-146.5172 92.4113,-144.0455 98.9238,-152.4025 102.7138,-146.5172"/>
+</g>
+<!-- aws_sns_topic_subscription.email_subscription -->
+<g id="node15" class="node">
+<title>aws_sns_topic_subscription.email_subscription</title>
+<polygon fill="none" stroke="#000000" points="1372.8748,-140 1089.6264,-140 1089.6264,-104 1372.8748,-104 1372.8748,-140"/>
+<text text-anchor="middle" x="1231.2506" y="-117.8" font-family="sans-serif" font-size="14.00" fill="#000000">aws_sns_topic_subscription.email_subscription</text>
+</g>
+<!-- aws_sns_topic_subscription.email_subscription&#45;&gt;aws_sns_topic.cpu_alert_topic -->
+<g id="edge22" class="edge">
+<title>aws_sns_topic_subscription.email_subscription-&gt;aws_sns_topic.cpu_alert_topic</title>
+<path fill="none" stroke="#000000" d="M1089.6499,-122C1054.0861,-122 1016.5626,-122 983.1841,-122"/>
+<polygon fill="#000000" stroke="#000000" points="982.9651,-118.5001 972.965,-122 982.965,-125.5001 982.9651,-118.5001"/>
+</g>
+<!-- aws_subnet.project&#45;subnet&#45;private1&#45;&gt;aws_vpc.project&#45;vpc -->
+<g id="edge23" class="edge">
+<title>aws_subnet.project-subnet-private1-&gt;aws_vpc.project-vpc</title>
+<path fill="none" stroke="#000000" d="M190.1281,-36.0898C182.5719,-38.686 175.1786,-41.6406 168.2266,-45 139.2173,-59.0181 110.8893,-82.4994 91.4585,-100.5811"/>
+<polygon fill="#000000" stroke="#000000" points="88.7951,-98.2836 83.9552,-107.7084 93.6161,-103.3589 88.7951,-98.2836"/>
+</g>
+<!-- aws_subnet.project&#45;subnet&#45;private2&#45;&gt;aws_vpc.project&#45;vpc -->
+<g id="edge24" class="edge">
+<title>aws_subnet.project-subnet-private2-&gt;aws_vpc.project-vpc</title>
+<path fill="none" stroke="#000000" d="M205.0539,-90.0693C192.7146,-92.9964 180.1144,-96.0393 168.2266,-99 159.7586,-101.109 150.9101,-103.3669 142.1153,-105.6455"/>
+<polygon fill="#000000" stroke="#000000" points="141.0263,-102.3123 132.2316,-108.2201 142.7909,-109.0863 141.0263,-102.3123"/>
+</g>
+<!-- aws_subnet.project&#45;subnet&#45;public&#45;&gt;aws_vpc.project&#45;vpc -->
+<g id="edge25" class="edge">
+<title>aws_subnet.project-subnet-public-&gt;aws_vpc.project-vpc</title>
+<path fill="none" stroke="#000000" d="M470.5315,-211.9532C458.6071,-209.149 446.5644,-206.1351 435.1924,-203 418.9335,-198.5176 415.5648,-195.0484 399.1924,-191 298.2025,-166.0282 269.9557,-174.7659 168.2266,-153 159.1103,-151.0495 149.5876,-148.8088 140.1795,-146.4702"/>
+<polygon fill="#000000" stroke="#000000" points="140.9915,-143.0654 130.4385,-144.0057 139.2745,-149.8516 140.9915,-143.0654"/>
+</g>
+</g>
+</svg>
