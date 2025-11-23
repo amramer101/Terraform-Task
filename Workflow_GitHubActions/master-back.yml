@@ -1,0 +1,39 @@
+name: Laravel Backend CD
+
+# Trigger the workflow on push to the main branch
+on:
+  push:
+    branches: [ "12.x" ] # Make sure your branch is named '12.x' no "main" branch in repo
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy via SSH
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          # 1. Navigate to the project directory
+          cd /home/ubuntu/laravel
+          
+          # 2. Enable maintenance mode (to pause traffic during update)
+          php artisan down
+          
+          # 3. Pull the latest changes from the repository
+          git pull origin main
+          
+          # 4. Install or update PHP dependencies
+          composer install --no-interaction --prefer-dist --optimize-autoloader
+          
+          # 5. Run database migrations (Critical step for schema updates)
+          php artisan migrate --force
+          
+          # 6. Clear cache and bring the application back up
+          php artisan optimize:clear
+          php artisan up
+          
+          echo "Deployment and Database Migration Completed Successfully! 🚀"
