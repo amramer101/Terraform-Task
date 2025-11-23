@@ -30,7 +30,7 @@ variable "db-password" {
 
   description = "The password for the RDS database"
   type        = string
-  default     = "AWDSecurePass123!"
+  default     = "/////////////////// Password"
   sensitive   = true  
   
 }
